@@ -1,0 +1,598 @@
+query {getOptimalRigSchedule(
+                optimizer: {
+                        id: "optimizer",
+                        timeLimit: 10,
+                        firstSolutionStrategy: "path_cheapest_arc"
+                        localSearch: "greedy_descent"
+                        penalty: 1000
+                }
+                wells: [
+
+                { 
+                        id: "Well0"
+                        arrivalTimeWindow: {
+                                    id:"well 0 time window"
+                                start: 0
+                                end:  5
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well1"
+                        arrivalTimeWindow: {
+                                     id:"well 1 time window"
+                                start: 7
+                                end:  12
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well2"
+                        arrivalTimeWindow: {
+                          id:"well 2 time window"
+                                start: 10
+                                end:  15
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well3"
+                        arrivalTimeWindow: {
+                          id:"well 3 time window"
+                                start: 16
+                                end:  18
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well4"
+                        arrivalTimeWindow: {
+                          id:"well 4 time window"
+                                start: 10
+                                end:  13
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well5"
+                        arrivalTimeWindow: {
+                          id:"well 5 time window"
+                                start: 0
+                                end:  5
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well6"
+                        arrivalTimeWindow: {
+                          id:"well 6 time window"
+                                start: 5
+                                end:  10
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well7"
+                        arrivalTimeWindow: {
+                          id:"well 7 time window"
+                                start: 0
+                                end:  4
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well8"
+                        arrivalTimeWindow: {
+                          id:"well 8 time window"
+                                start: 5
+                                end:  10
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well9"
+                        arrivalTimeWindow: {
+                          id:"well 9 time window"
+                                start: 0
+                                end:  3
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well10"
+                        arrivalTimeWindow: {
+                          id:"well 10 time window"
+                                start: 10
+                                end:  16
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well11"
+                        arrivalTimeWindow: {
+                          id:"well 11 time window"
+                                start: 10
+                                end:  15
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well12"
+                        arrivalTimeWindow: {
+                          id:"well 12 time window"
+                                start: 0
+                                end:  5
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well13"
+                        arrivalTimeWindow: {
+                          id:"well 13 time window"
+                                start: 5
+                                end:  10
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well14"
+                        arrivalTimeWindow: {
+                          id:"well 14 time window"
+                                start: 7
+                                end:  8
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well15"
+                        arrivalTimeWindow: {
+                          id:"well 15 time window"
+                                start: 10
+                                end:  15
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+                { 
+                        id: "Well16"
+                        arrivalTimeWindow: {
+                          id:"well 16 time window"
+                                start: 11
+                                end:  15
+                        }
+                        serviceTime: 1
+                        candidateRigs: []
+
+                },
+
+        
+
+        ]
+
+                rigs : [
+
+                       {
+                        id: "rig0"
+                        startTimeWindow: {
+                          id: "rig0 start time"
+                          start: 0,
+                          end: 300
+                        }
+                        startPosition: 0,
+                 
+
+                        },
+                        {
+                           id: "rig1"
+                          startTimeWindow: {
+                          id: "rig1 start time"
+                          start: 0,
+                          end: 300
+                        }
+                          startPosition: 0,
+                           
+                        },
+                        {
+                           id: "rig2"
+                          startTimeWindow: {
+                          id: "rig2 start time"
+                          start: 0,
+                          end: 300
+                        }
+                                startPosition: 0,
+                         
+
+                        },
+                        {
+                           id: "rig3"
+                          startTimeWindow: {
+                          id: "rig3 start time"
+                          start: 0,
+                          end: 300
+                        }
+                                startPosition: 0,
+                           
+                        },
+                ]
+                timeMatrix : {
+                        id: "time matrix",
+                        rows: [
+
+                                { id: "row0",         
+                                  values: [     {id:"r0v0", value: 0},
+                                                {id:"r0v1", value: 6},
+                                                {id:"r0v2", value: 9}, 
+                                                {id:"r0v3", value: 8}, 
+                                                {id:"r0v4", value: 7}, 
+                                                {id:"r0v5", value: 3}, 
+                                                {id:"r0v6", value: 6}, 
+                                                {id:"r0v7", value: 2}, 
+                                                {id:"r0v8", value: 3}, 
+                                                {id:"r0v9", value: 2}, 
+                                                {id:"r0v10", value: 6}, 
+                                                {id:"r0v11", value: 6}, 
+                                                {id:"r0v12", value: 4}, 
+                                                {id:"r0v13", value: 4}, 
+                                                {id:"r0v14", value: 5}, 
+                                                {id:"r0v15", value: 9}, 
+                                                {id:"r0v16", value: 7},  ]
+                                }
+                                {    
+                                id: "row1",  
+                                  values: [     {id:"r1v0", value: 6},
+                                                {id:"r1v1", value: 0},
+                                                {id:"r1v2", value: 8}, 
+                                                {id:"r1v3", value: 3}, 
+                                                {id:"r1v4", value: 2}, 
+                                                {id:"r1v5", value: 6}, 
+                                                {id:"r1v6", value: 8}, 
+                                                {id:"r1v7", value: 4}, 
+                                                {id:"r1v8", value: 8}, 
+                                                {id:"r1v9", value: 8}, 
+                                                {id:"r1v10", value: 13}, 
+                                                {id:"r1v11", value: 7}, 
+                                                {id:"r1v12", value: 5}, 
+                                                {id:"r1v13", value: 8}, 
+                                                {id:"r1v14", value: 12}, 
+                                                {id:"r1v15", value: 10}, 
+                                                {id:"r1v16", value: 14},  ]
+                                }
+                                { id: "row2",     
+                                  values: [     {id:"r2v0", value: 9},
+                                                {id:"r2v1", value: 8},
+                                                {id:"r2v2", value: 0}, 
+                                                {id:"r2v3", value: 11}, 
+                                                {id:"r2v4", value: 10}, 
+                                                {id:"r2v5", value: 6}, 
+                                                {id:"r2v6", value: 3}, 
+                                                {id:"r2v7", value: 9}, 
+                                                {id:"r2v8", value: 5}, 
+                                                {id:"r2v9", value: 8}, 
+                                                {id:"r2v10", value: 4}, 
+                                                {id:"r2v11", value: 15}, 
+                                                {id:"r2v12", value: 14}, 
+                                                {id:"r2v13", value: 13}, 
+                                                {id:"r2v14", value: 9}, 
+                                                {id:"r2v15", value: 18}, 
+                                                {id:"r2v16", value: 9},  ]
+                                }
+                                { id: "row3",       
+
+                                  values: [     {id:"r3v0", value: 8},
+                                                {id:"r3v1", value: 3},
+                                                {id:"r3v2", value: 11}, 
+                                                {id:"r3v3", value: 0}, 
+                                                {id:"r3v4", value: 1}, 
+                                                {id:"r3v5", value: 7}, 
+                                                {id:"r3v6", value: 10}, 
+                                                {id:"r3v7", value: 6}, 
+                                                {id:"r3v8", value: 10}, 
+                                                {id:"r3v9", value: 10}, 
+                                                {id:"r3v10", value: 14}, 
+                                                {id:"r3v11", value: 6}, 
+                                                {id:"r3v12", value: 7}, 
+                                                {id:"r3v13", value: 9}, 
+                                                {id:"r3v14", value: 14}, 
+                                                {id:"r3v15", value: 6}, 
+                                                {id:"r3v16", value: 16},  ]
+                                }
+                                { id: "row4", 
+
+                                  values: [     {id:"r4v0", value: 7},
+                                                {id:"r4v1", value: 2},
+                                                {id:"r4v2", value: 10}, 
+                                                {id:"r4v3", value: 1}, 
+                                                {id:"r4v4", value: 0}, 
+                                                {id:"r4v5", value: 6}, 
+                                                {id:"r4v6", value: 9}, 
+                                                {id:"r4v7", value: 4}, 
+                                                {id:"r4v8", value: 8}, 
+                                                {id:"r4v9", value: 9}, 
+                                                {id:"r4v10", value: 13}, 
+                                                {id:"r4v11", value: 4}, 
+                                                {id:"r4v12", value: 6}, 
+                                                {id:"r4v13", value: 8}, 
+                                                {id:"r4v14", value: 12}, 
+                                                {id:"r4v15", value: 8}, 
+                                                {id:"r4v16", value: 14},  ]
+                                }
+                                { id: "row5",       
+                                 
+                                  values: [     {id:"r5v0", value: 3},
+                                                {id:"r5v1", value: 6},
+                                                {id:"r5v2", value: 6}, 
+                                                {id:"r5v3", value: 7}, 
+                                                {id:"r5v4", value: 6}, 
+                                                {id:"r5v5", value: 0}, 
+                                                {id:"r5v6", value: 2}, 
+                                                {id:"r5v7", value: 3}, 
+                                                {id:"r5v8", value: 2}, 
+                                                {id:"r5v9", value: 2}, 
+                                                {id:"r5v10", value: 7}, 
+                                                {id:"r5v11", value: 9}, 
+                                                {id:"r5v12", value: 7}, 
+                                                {id:"r5v13", value: 7}, 
+                                                {id:"r5v14", value: 6}, 
+                                                {id:"r5v15", value: 12}, 
+                                                {id:"r5v16", value: 8},  ]
+                                }
+                                { id: "row6",    
+                                  values: [     {id:"r6v0", value: 6},
+                                                {id:"r6v1", value: 8},
+                                                {id:"r6v2", value: 3}, 
+                                                {id:"r6v3", value: 10}, 
+                                                {id:"r6v4", value: 9}, 
+                                                {id:"r6v5", value: 2}, 
+                                                {id:"r6v6", value: 0}, 
+                                                {id:"r6v7", value: 6}, 
+                                                {id:"r6v8", value: 2}, 
+                                                {id:"r6v9", value: 5}, 
+                                                {id:"r6v10", value: 4}, 
+                                                {id:"r6v11", value: 12}, 
+                                                {id:"r6v12", value: 10}, 
+                                                {id:"r6v13", value: 10}, 
+                                                {id:"r6v14", value: 6}, 
+                                                {id:"r6v15", value: 15}, 
+                                                {id:"r6v16", value: 5},  ]
+                                }
+                                { id: "row7",          
+                  
+                                  values: [     {id:"r7v0", value: 2},
+                                                {id:"r7v1", value: 4},
+                                                {id:"r7v2", value: 9}, 
+                                                {id:"r7v3", value: 6}, 
+                                                {id:"r7v4", value: 4}, 
+                                                {id:"r7v5", value: 3}, 
+                                                {id:"r7v6", value: 6}, 
+                                                {id:"r7v7", value: 0}, 
+                                                {id:"r7v8", value: 4}, 
+                                                {id:"r7v9", value: 4}, 
+                                                {id:"r7v10", value: 8}, 
+                                                {id:"r7v11", value: 5}, 
+                                                {id:"r7v12", value: 4}, 
+                                                {id:"r7v13", value: 3}, 
+                                                {id:"r7v14", value: 7}, 
+                                                {id:"r7v15", value: 8}, 
+                                                {id:"r7v16", value: 10},  ]
+                                }
+                                { id: "row8",    
+                                  values: [     {id:"r8v0", value: 3},
+                                                {id:"r8v1", value: 8},
+                                                {id:"r8v2", value: 5}, 
+                                                {id:"r8v3", value: 10}, 
+                                                {id:"r8v4", value: 8}, 
+                                                {id:"r8v5", value: 2}, 
+                                                {id:"r8v6", value: 2}, 
+                                                {id:"r8v7", value: 4}, 
+                                                {id:"r8v8", value: 0}, 
+                                                {id:"r8v9", value: 3}, 
+                                                {id:"r8v10", value:4}, 
+                                                {id:"r8v11", value: 9}, 
+                                                {id:"r8v12", value: 8}, 
+                                                {id:"r8v13", value: 7}, 
+                                                {id:"r8v14", value: 3}, 
+                                                {id:"r8v15", value: 13}, 
+                                                {id:"r8v16", value: 6},  ]
+                                }
+                                { id: "row9", 
+                                  values: [     {id:"r9v0", value: 2},
+                                                {id:"r9v1", value: 8},
+                                                {id:"r9v2", value: 8}, 
+                                                {id:"r9v3", value: 10}, 
+                                                {id:"r9v4", value: 9}, 
+                                                {id:"r9v5", value: 2}, 
+                                                {id:"r9v6", value: 5}, 
+                                                {id:"r9v7", value: 4}, 
+                                                {id:"r9v8", value: 3}, 
+                                                {id:"r9v9", value: 0}, 
+                                                {id:"r9v10", value: 4}, 
+                                                {id:"r9v11", value: 6}, 
+                                                {id:"r9v12", value: 5}, 
+                                                {id:"r9v13", value: 4}, 
+                                                {id:"r9v14", value: 3}, 
+                                                {id:"r9v15", value: 9}, 
+                                                {id:"r9v16", value: 5},  ]
+                                }
+                                { id: "row10",    
+                                  values: [     {id:"r10v0", value: 6},
+                                                {id:"r10v1", value: 13},
+                                                {id:"r10v2", value: 4}, 
+                                                {id:"r10v3", value: 14}, 
+                                                {id:"r10v4", value: 13}, 
+                                                {id:"r10v5", value: 7}, 
+                                                {id:"r10v6", value: 4}, 
+                                                {id:"r10v7", value: 8}, 
+                                                {id:"r10v8", value: 4}, 
+                                                {id:"r10v9", value: 4}, 
+                                                {id:"r10v10", value: 0}, 
+                                                {id:"r10v11", value: 10}, 
+                                                {id:"r10v12", value: 9}, 
+                                                {id:"r10v13", value: 8}, 
+                                                {id:"r10v14", value: 4}, 
+                                                {id:"r10v15", value: 13}, 
+                                                {id:"r10v16", value: 4},  ]
+                                }
+                                { id: "row11",  
+                                        values: [     {id:"r11v0", value: 6},
+                                                {id:"r11v1", value: 7},
+                                                {id:"r11v2", value: 15}, 
+                                                {id:"r11v3", value: 6}, 
+                                                {id:"r11v4", value: 4}, 
+                                                {id:"r11v5", value: 9}, 
+                                                {id:"r11v6", value: 12}, 
+                                                {id:"r11v7", value: 5}, 
+                                                {id:"r11v8", value: 9}, 
+                                                {id:"r11v9", value: 6}, 
+                                                {id:"r11v10", value: 10}, 
+                                                {id:"r11v11", value: 0}, 
+                                                {id:"r11v12", value: 1}, 
+                                                {id:"r11v13", value: 3}, 
+                                                {id:"r11v14", value: 7}, 
+                                                {id:"r11v15", value: 3}, 
+                                                {id:"r11v16", value: 10},  ]
+                                }
+                                { id: "row12",  
+                                 values: [     {id:"r12v0", value: 4},
+                                                {id:"r12v1", value: 5},
+                                                {id:"r12v2", value: 14}, 
+                                                {id:"r12v3", value: 7}, 
+                                                {id:"r12v4", value: 6}, 
+                                                {id:"r12v5", value: 7}, 
+                                                {id:"r12v6", value: 10}, 
+                                                {id:"r12v7", value: 4}, 
+                                                {id:"r12v8", value: 8}, 
+                                                {id:"r12v9", value: 4}, 
+                                                {id:"r12v10", value: 9}, 
+                                                {id:"r12v11", value: 1}, 
+                                                {id:"r12v12", value: 0}, 
+                                                {id:"r12v13", value: 2}, 
+                                                {id:"r12v14", value: 6}, 
+                                                {id:"r12v15", value: 4}, 
+                                                {id:"r12v16", value: 8},  ]
+                                }
+                                { id: "row13",  
+                                  values: [     {id:"r13v0", value: 4},
+                                                {id:"r13v1", value: 8},
+                                                {id:"r13v2", value: 13}, 
+                                                {id:"r13v3", value: 9}, 
+                                                {id:"r13v4", value: 8}, 
+                                                {id:"r13v5", value: 7}, 
+                                                {id:"r13v6", value: 10}, 
+                                                {id:"r13v7", value: 3}, 
+                                                {id:"r13v8", value: 7}, 
+                                                {id:"r13v9", value: 4}, 
+                                                {id:"r13v10", value: 8}, 
+                                                {id:"r13v11", value: 3}, 
+                                                {id:"r13v12", value: 2}, 
+                                                {id:"r13v13", value: 0}, 
+                                                {id:"r13v14", value: 4}, 
+                                                {id:"r13v15", value: 5}, 
+                                                {id:"r13v16", value: 6},  ]
+                                }
+                                { id: "row14",    
+                                  values: [     {id:"r14v0", value: 5},
+                                                {id:"r14v1", value: 9},
+                                                {id:"r14v2", value: 12}, 
+                                                {id:"r14v3", value: 14}, 
+                                                {id:"r14v4", value: 12}, 
+                                                {id:"r14v5", value: 6}, 
+                                                {id:"r14v6", value: 6}, 
+                                                {id:"r14v7", value: 7}, 
+                                                {id:"r14v8", value: 3}, 
+                                                {id:"r14v9", value: 3}, 
+                                                {id:"r14v10", value: 4}, 
+                                                {id:"r14v11", value: 7}, 
+                                                {id:"r14v12", value: 6}, 
+                                                {id:"r14v13", value: 4}, 
+                                                {id:"r14v14", value: 0}, 
+                                                {id:"r14v15", value: 9}, 
+                                                {id:"r14v16", value: 2},  ]
+                                }
+                                { id: "row15",       
+                                  values: [     {id:"r15v0", value: 9},
+                                                {id:"r15v1", value: 10},
+                                                {id:"r15v2", value: 18}, 
+                                                {id:"r15v3", value: 6}, 
+                                                {id:"r15v4", value: 8}, 
+                                                {id:"r15v5", value: 12}, 
+                                                {id:"r15v6", value: 15}, 
+                                                {id:"r15v7", value: 8}, 
+                                                {id:"r15v8", value: 13}, 
+                                                {id:"r15v9", value: 9}, 
+                                                {id:"r15v10", value: 13}, 
+                                                {id:"r15v11", value: 3}, 
+                                                {id:"r15v12", value: 4}, 
+                                                {id:"r15v13", value: 5}, 
+                                                {id:"r15v14", value: 9}, 
+                                                {id:"r15v15", value: 0}, 
+                                                {id:"r15v16", value: 9},  ]
+                                }
+                                { id: "row16",   
+                                  values: [     {id:"r16v0", value: 7},
+                                                {id:"r16v1", value: 14},
+                                                {id:"r16v2", value: 9}, 
+                                                {id:"r16v3", value: 16}, 
+                                                {id:"r16v4", value: 14}, 
+                                                {id:"r16v5", value: 8}, 
+                                                {id:"r16v6", value: 5}, 
+                                                {id:"r16v7", value: 10}, 
+                                                {id:"r16v8", value: 6}, 
+                                                {id:"r16v9", value: 5}, 
+                                                {id:"r16v10", value: 4}, 
+                                                {id:"r16v11", value: 10}, 
+                                                {id:"r16v12", value: 8}, 
+                                                {id:"r16v13", value: 6}, 
+                                                {id:"r16v14", value: 2}, 
+                                                {id:"r16v15", value: 9}, 
+                                                {id:"r16v16", value: 0},  ]
+                                }
+                        ]
+                }
+){
+  id
+  rigSchedules{
+    id
+    costOfRoute
+    timeOfRoute
+    routeSteps{
+      id
+      cost
+      solutionTimeWindow {
+        start
+        end
+      }
+    }
+  }
+}}
+     
